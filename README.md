@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-Design With Mohamed is a personal portfolio website created to showcase the digital design work of Mohamed. It is built using React and is fully responsive, ensuring that it looks great on all devices.
+Welcome to my React portfolio! This is a dynamic web application that showcases my skills and projects as a Webflow Developer and Web Designer.
+
+![React Portfolio Screenshot](./public/Screenshot.png)
 
 ## Features
 
@@ -10,21 +12,29 @@ Design With Mohamed is a personal portfolio website created to showcase the digi
 - **Interactive Tags**: Skill tags such as "Webflow Developer" and "Web Designer" highlight Mohamed's key skills.
 - **Navigation Menu**: A collapsible navigation menu for easy access to different sections of the portfolio.
 
+## About The Project
+
+I've designed this portfolio to be a reflection of my work and ethos as a digital designer. It's built with the latest web technologies to ensure a seamless and engaging user experience.
+
+### Built With
+
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
+- [Font Awesome](https://fontawesome.com)
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- npm
+  ```sh
+  npm install npm@latest -g
+
 ## Installation
-
-To get a local copy up and running, follow these simple steps:
-
-1. Clone the repository:
-git clone https://github.com/IbnuAlii/REACT/tree/main/ASSIGNMENTS
-
-2. Navigate to the project directory:
-cd design-with-mohamed-portfolio
-
-3. Install NPM packages:
-npm install
-
-4. Start the development server:
-npm start
+1. Clone the repo
+`git clone https://github.com/your-username/react-portfolio.git`
 
 
 ## Usage
