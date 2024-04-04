@@ -152,3 +152,29 @@
     color: #ffffff; 
   }
 }
+
+@media (max-width: 768px) {
+  .navbar__brand {
+    font-size: 1rem; /* Smaller font size for mobile */
+    margin-right: 50px; /* Adjust the right margin to prevent overlap with toggle */
+  }
+
+  .navbar__toggle {
+    z-index: 101; /* Ensures the toggle is above other elements */
+  }
+
+  /* Adjust navbar padding and toggle icon size if necessary */
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduce padding for small screens */
+  }
+
+  .navbar__toggle {
+    font-size: 1.2rem; /* Adjust toggle size as necessary */
+  }
+
+  /* Ensure the navbar menu does not overlap the brand on small screens */
+  .navbar__menu {
+    width: calc(100% - 50px); /* Adjust the width to prevent overlap */
+    text-align: left; /* Align the text to the left */
+  }
+}
