@@ -1,7 +1,7 @@
 // IntroSection.js
 import React from 'react';
 import './IntroSection.css';
-import SkillTag from '../SkillTag/SkillTag'; // Import the SkillTag component
+import SkillTag from '../SkillTag/SkillTag'; 
 import profilePic from '../../../../public/Profile1.ico'; 
 
 
@@ -9,7 +9,6 @@ import profilePic from '../../../../public/Profile1.ico';
 const IntroSection = () => {
   return (
     <div className="intro-section">
-      {/* Floating skill tags positioned absolutely */}
       <SkillTag text="Webflow Developer" position="left" />
       <SkillTag text="Web Designer" position="right" />
 

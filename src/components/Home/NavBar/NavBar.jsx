@@ -10,7 +10,6 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
     setIsNavVisible(prevIsNavVisible => !prevIsNavVisible);
   };
 
-  // Smooth scroll handler
   const smoothScroll = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: 'smooth', block: 'start' });

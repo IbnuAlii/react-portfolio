@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faJava, faGitAlt, faPython ,faReact ,faFigma , faPhp, faSwift, faGolang, faRust, faNode } from '@fortawesome/free-brands-svg-icons';
 import './Skills.css';
 
-// Mapping skill names to their respective FontAwesomeIcon components
 const skillIcons = {
   HTML: faHtml5,
   CSS: faCss3Alt,
@@ -19,7 +18,6 @@ const skillIcons = {
   Rust: faRust,
   Nodejs: faNode,
 
-  // Add more skills and their icons here
 };
 
 const Skills = () => {

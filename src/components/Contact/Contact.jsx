@@ -1,4 +1,3 @@
-// Contact.jsx
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faPhone, faEnvelope, faHeadphones } from '@fortawesome/free-solid-svg-icons';

@@ -52,7 +52,7 @@
 
 .project-card-action-btn {
   text-decoration: none;
-  color: inherit; /* Inherit text color from parent */
+  color: inherit;
 }
 .project-card-action-btn:hover,
 .project-card-action-btn:focus {
@@ -64,8 +64,8 @@
 
 /* Dark mode styles */
 .dark-mode .project-card {
-  background-color: #141a30; /* Darker background for dark mode */
-  color: #fff; /* Light text for dark mode */
+  background-color: #141a30; 
+  color: #fff; 
 }
 
 @media (max-width: 768px) {

@@ -7,24 +7,24 @@
   }
   
   .skills-section h2 {
-    font-size: 2.5em; /* Replace with the exact font size from your design */
-    margin-bottom: 50px; /* Adjust space below the heading as needed */
+    font-size: 2.5em; 
+    margin-bottom: 50px; 
   }
   
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Creates a responsive grid with minimum column width of 120px */
-    gap: 15px; /* Space between the skill boxes */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 15px; 
     justify-content: center;
-    padding: 0 20px; /* Padding on the sides */
+    padding: 0 20px; 
   }
   
   .skill-box {
-    background-color: white; /* A lighter shade for the skill boxes */
-    padding: 10px 20px; /* Padding inside the skill boxes */
-    border-radius: 4px; /* Rounded corners for the skill boxes */
-    font-weight: bold; /* Make the text bold */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a 3D effect */
+    background-color: white; 
+    padding: 10px 20px; 
+    border-radius: 4px;
+    font-weight: bold; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
     margin-top: 1rem;
   }
   .skill-box .fa-icon {
-  margin-bottom: 10px; /* Adjust space between icon and text */
+  margin-bottom: 10px; 
 }
 
   .dark-mode .skills-section{
@@ -63,10 +63,9 @@
     border: 1px solid #6c63ff;
 
 }
-  /* Responsive design for smaller screens */
   @media (max-width: 768px) {
     .skills-container {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); /* Adjust the grid layout for smaller screens */
+      grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); 
     }
   }
   

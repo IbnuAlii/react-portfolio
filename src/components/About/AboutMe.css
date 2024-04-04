@@ -4,16 +4,16 @@
     flex-direction: column;
     align-items: center;
     padding: 4rem;
-    background-color: #ffffff; /* or any color */
+    background-color: #ffffff;
 }
   
 .dark-mode .about-me {
-    background-color: #141a30; /* Dark mode background */
-    color: #FFFFFF; /* Dark mode text color */
+    background-color: #141a30; 
+    color: #FFFFFF; 
 }
   
 .about-me-header {
-    margin-bottom: 5rem; /* Spacing between header and cards */
+    margin-bottom: 5rem;
 }
   
 .about-me-cards {
@@ -27,7 +27,7 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Makes both image and card share the available space equally */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@
   
   .about-me-card-action-bttn {
     text-decoration: none;
-    color: inherit; /* Inherit text color from parent */
+    color: inherit; 
   }
   .about-me-card-action-bttn:hover,
   .about-me-card-action-bttn:focus {
@@ -63,18 +63,18 @@
 .about-me-image-container {
     border-radius: 8px;
     overflow: hidden;
-    flex: 0.7; /* Makes both image and card share the available space equally */
+    flex: 0.7; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
   
 .about-me-card {
-    align-items: flex-center; /* Align text to the left */
+    align-items: flex-center; 
 }
   
 .profile-image {
-    width: 100%; /* Adjust to fill the container */
+    width: 100%;
     height: auto;
     border-radius: 10%;
 }
@@ -124,7 +124,7 @@
 .buttons {
     display: flex;
     gap: 1rem;
-    margin-top: auto; /* Pushes the buttons to the bottom */
+    margin-top: auto; 
 }
   
 .bttn {
@@ -132,12 +132,12 @@
     border: none;
     border-radius: 4px;
     color: white;
-    background-color: #6c63ff; /* Your primary color */
+    background-color: #6c63ff; 
     cursor: pointer;
 }
   
 .bttn:hover {
-    background-color: #000000; /* A slightly darker shade for hover effect */
+    background-color: #000000; 
 }
 
 .dark-mode .about-me-card {
@@ -158,11 +158,11 @@
     }
   
     .about-me-card, .about-me-image-container {
-        width: 100%; /* Full width on small screens */
+        width: 100%; 
         max-width: none;
     }
   
     .profile-card {
-        height: auto; /* Let image take its natural height */
+        height: auto;
     }
 }

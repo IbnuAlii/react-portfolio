@@ -1,7 +1,6 @@
-// AboutMe.jsx
 import React from 'react';
 import './AboutMe.css';
-import profileImage from '../../../public/Profile2.jpg'; // Ensure this path is correct based on your project structure
+import profileImage from '../../../public/Profile2.jpg'; 
 
 const AboutMe = ({ darkMode }) => {
   return (
@@ -9,11 +8,9 @@ const AboutMe = ({ darkMode }) => {
         <section className={`about-me ${darkMode ? 'dark-mode' : ''}`}>
         <h1 className="about-me-header">About Me</h1>
         <div className="about-me-cards">
-            {/* Image container without the card styling */}
             <div className="about-me-image-container">
             <img src={profileImage} alt="John Smith" className="profile-image" />
             </div>
-            {/* Text content with card styling */}
             <div className="about-me-card">
             <h2>Hi, I am Mohamed Ali</h2>
             <h3>Graphic Designer and A Front end Developer</h3>
