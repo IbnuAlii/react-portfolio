@@ -34,32 +34,28 @@ To get a local copy up and running, follow these simple steps.
 
 ## Installation
 1. Clone the repo
-`git clone https://github.com/your-username/react-portfolio.git`
+    ```sh
+    git clone https://github.com/your-username/react-portfolio.git
+2. Install NPM packages
+    ```sh
+    npm install
 
 
-## Usage
+### Usage
+This portfolio is a great starting point for understanding my capabilities as a developer and designer. You can view the live projects, read about my design process, and see the technologies I use.
 
-Use this project as a personal portfolio template. Customize the content, styles, and components to fit your own needs and showcase your work.
+### Roadmap
+For future updates and project progression, check out the issues page.
 
-## Contributing
+### Contributing
+Contributions are what make the open source community such an incredible place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Mohamed - [YourContactInformation]
+Mohamed - [ibnuali600@gmail.com]
 
-Project Link: [https://github.com/IbnuAlii/REACT/tree/main/ASSIGNMENTS](https://github.com/IbnuAlii/REACT/tree/main/ASSIGNMENTS)
+Project Link: [live](https://github.com/IbnuAlii/REACT/tree/main/ASSIGNMENTS)
 
 ## Acknowledgements
 
