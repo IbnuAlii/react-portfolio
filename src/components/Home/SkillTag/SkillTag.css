@@ -1,0 +1,35 @@
+/* SkillTag.css */
+.skill-tag {
+    position: absolute;
+    padding: 10px;
+    border: 2px solid #6c63ff; /* Dashed border like the one in the image */
+    border-radius: 50px; /* Rounded borders */
+    color: #6c63ff;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .skill-tag:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+  }
+  
+  .skill-tag.left {
+    top: 30%; /* Position on the left */
+    left: 25%;
+  }
+  
+  .skill-tag.right {
+    top: 30%; /* Position on the right */
+    right: 25%;
+  }
+  
+
+  @media (max-width: 768px) {
+    .skill-tag {
+      position: static; /* Disable absolute positioning on small screens */
+      margin: 10px auto; /* Center the tags */
+      display: none; /* Stack the tags */
+    }
+  }
+  

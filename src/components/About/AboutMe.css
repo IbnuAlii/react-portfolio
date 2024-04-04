@@ -1,0 +1,168 @@
+/* AboutMe.css */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    background-color: #ffffff; /* or any color */
+}
+  
+.dark-mode .about-me {
+    background-color: #141a30; /* Dark mode background */
+    color: #FFFFFF; /* Dark mode text color */
+}
+  
+.about-me-header {
+    margin-bottom: 5rem; /* Spacing between header and cards */
+}
+  
+.about-me-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+}
+  
+.about-me-card  {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Makes both image and card share the available space equally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.about-me-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.about-me-card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .about-me-card-action-bttn {
+    text-decoration: none;
+    color: inherit; /* Inherit text color from parent */
+  }
+  .about-me-card-action-bttn:hover,
+  .about-me-card-action-bttn:focus {
+    color: #6c63ff; 
+    transform: scale(1.1);
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+.about-me-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 0.7; /* Makes both image and card share the available space equally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.about-me-card {
+    align-items: flex-center; /* Align text to the left */
+}
+  
+.profile-image {
+    width: 100%; /* Adjust to fill the container */
+    height: auto;
+    border-radius: 10%;
+}
+  
+.profile-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.link-button   {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 2px;
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px ;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+  .link-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background: #6c63ff;
+    transition: left 0.4s;
+    z-index: -1;
+  }
+  
+  
+  .link-button:hover {
+    color: white;
+    background-color: #000000;
+  }
+
+  .link-button:hover::after {
+    left: 0; 
+  }
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto; /* Pushes the buttons to the bottom */
+}
+  
+.bttn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #6c63ff; /* Your primary color */
+    cursor: pointer;
+}
+  
+.bttn:hover {
+    background-color: #000000; /* A slightly darker shade for hover effect */
+}
+
+.dark-mode .about-me-card {
+    background-color: #040221;
+    color: #fff;
+}
+
+.dark-mode .about-me-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+    background-color: #6c63ff;
+}
+  
+@media (max-width: 768px) {
+    .about-me-cards {
+        flex-direction: column;
+    }
+  
+    .about-me-card, .about-me-image-container {
+        width: 100%; /* Full width on small screens */
+        max-width: none;
+    }
+  
+    .profile-card {
+        height: auto; /* Let image take its natural height */
+    }
+}

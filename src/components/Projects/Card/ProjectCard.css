@@ -1,0 +1,80 @@
+.project-container {
+  background:#FBFBFC;
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.projects-heading {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem; 
+  color: #6c63ff;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.heading-icon {
+  margin-right: 0.5rem;
+}
+
+.projects-heading .fa-lightbulb {
+  margin-right: 0.5em; 
+}
+
+
+.project-card {
+  padding: 2rem 1rem 3rem 1rem;
+  background-color: white; 
+  border-radius: 8px;
+  text-align: center;
+  flex-basis: calc(30% - 1rem);
+  margin: 0.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.project-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.project-card-action-btn {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+}
+.project-card-action-btn:hover,
+.project-card-action-btn:focus {
+  color: #6c63ff; 
+  transform: scale(1.1);
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+/* Dark mode styles */
+.dark-mode .project-card {
+  background-color: #141a30; /* Darker background for dark mode */
+  color: #fff; /* Light text for dark mode */
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-basis: 100%;
+    margin: 0.5rem 0;
+  }
+  .project-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+}

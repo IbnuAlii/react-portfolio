@@ -1,0 +1,72 @@
+.skills-section {
+    background-color: #F1FDFD; 
+    color: black;
+    padding: 50px 40px;
+    text-align: center;
+    margin-top:5px;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5em; /* Replace with the exact font size from your design */
+    margin-bottom: 50px; /* Adjust space below the heading as needed */
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Creates a responsive grid with minimum column width of 120px */
+    gap: 15px; /* Space between the skill boxes */
+    justify-content: center;
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
+  .skill-box {
+    background-color: white; /* A lighter shade for the skill boxes */
+    padding: 10px 20px; /* Padding inside the skill boxes */
+    border-radius: 4px; /* Rounded corners for the skill boxes */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a 3D effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.skill-box-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  .skill-box .fa-icon {
+  margin-bottom: 10px; /* Adjust space between icon and text */
+}
+
+  .dark-mode .skills-section{
+    background-color: #040221;
+    color: #fff;
+  }
+  .dark-mode .skill-box{
+    background-color: #141a30;
+    color: #fff;
+  }
+  .skill-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #6c63ff;
+
+}
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); /* Adjust the grid layout for smaller screens */
+    }
+  }
+  

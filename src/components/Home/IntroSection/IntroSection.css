@@ -1,0 +1,82 @@
+/* IntroSection.css */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    text-align: center;
+    background: #FFFFFF; 
+    color: #333333;
+    position: relative;
+  }
+  
+  .intro-section__content {
+    max-width: 960px;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  
+  .intro-section__image {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 0rem;
+    object-fit: cover;
+    border: 1px solid #6c63ff; 
+  }
+  
+  .intro-section__cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    background-color: transparent;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+  
+  .intro-section__cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background: #6c63ff;
+    transition: left 0.4s;
+    z-index: -1;
+  }
+  
+  
+  .intro-section__cta:hover {
+    color: white;
+    background-color: #6c63ff;
+  }
+
+  .intro-section__cta:hover::after {
+    left: 0; 
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .intro-section {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .intro-section__content {
+      display: block;
+    }
+  
+    .intro-section__image {
+      margin: 0 auto;
+      display: block;
+    }
+  }

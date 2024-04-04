@@ -1,0 +1,155 @@
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+  background-color: transparent; 
+  color: #094282;
+  box-shadow: 0 2px 4px 0 rgba(30, 26, 84, 0.5);
+  z-index: 1000; 
+}
+
+.navbar__brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #8179fc;
+  
+}
+.navbar__name{
+  color: #000000;
+}
+
+
+
+.navbar__menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__link {
+  display: inline-block;
+  position: relative;
+  color: #000; 
+  text-decoration: none; 
+  padding: 0.5rem 1rem; 
+}
+
+.navbar__link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Height of the underline */
+  bottom: -5px; /* Distance from the bottom of the text */
+  left: 0;
+  background-color: #6c63ff; /* Color of the underline */
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__link:hover {
+  color: #FFFFFF;
+  background-color: #6c63ff; 
+}
+
+.navbar__link:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+.navbar__toggle {
+  display: none; 
+  font-size: 1.5rem; 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__theme-toggle {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  left: calc(65% - 4rem); 
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .navbar__theme-toggle {
+    left: calc(90% - 3rem); 
+  }
+}
+
+
+.navbar__menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__menu--visible {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 60px; /* Adjust based on the height of your navbar */
+  background-color: #ffffff; /* Match the navbar color */
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.navbar__menu--visible .navbar__link {
+  color: #4A4A4A; 
+  display: block; 
+}
+
+
+
+@media (min-width: 769px) {
+  .navbar__toggle {
+    display: none; /* Hide the toggle button on larger screens */
+  }
+
+  .navbar__menu {
+    display: flex; /* Show the menu on larger screens */
+  }
+}
+
+/* Styles for screens 768px wide or less */
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: block; /* Show the toggle button on smaller screens */
+  }
+
+  .navbar__menu {
+    display: none; /* Initially hide the menu on smaller screens */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .navbar__menu--visible {
+    display: flex; /* Show the menu when navbar__menu--visible class is added */
+  }
+
+  .navbar__menu--visible .navbar__link {
+    color: #000000; 
+  }
+  .navbar__menu--visible .navbar__link:hover {
+    color: #ffffff; 
+  }
+  .dark-mode .navbar__menu--visible  {
+    background-color: #040221; 
+    color: #ffffff; 
+  }
+  .dark-mode .navbar__menu--visible .navbar__link {
+    color: #ffffff; 
+  }
+}
