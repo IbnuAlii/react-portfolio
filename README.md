@@ -55,7 +55,7 @@ Contributions are what make the open source community such an incredible place t
 
 Mohamed - [ibnuali600@gmail.com]
 
-Project Link: [live](https://github.com/IbnuAlii/REACT/tree/main/ASSIGNMENTS)
+Project Link: [live](https://ibnualii.github.io/react-portfolio)
 
 ## Acknowledgements
 
